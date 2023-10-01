@@ -25,3 +25,4 @@ function top_3_words(inputString) {
   // Return the top three words with the highest frequencies.
   return sortedWords.slice(0, 3)
 }
+module.exports = top_3_words

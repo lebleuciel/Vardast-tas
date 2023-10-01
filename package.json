@@ -4,9 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "run test"
-  },
-  "author": "",
+    "test": "jest main.test.js",
+    "start": "node main.js"
+    },
+  "author": "Hasti Darabi",
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
