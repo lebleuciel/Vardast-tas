@@ -1,3 +1,20 @@
+const readline = require('readline')
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+})
+
+rl.question('Enter a string: ', (inputString) => {
+  // Call the top_3_words function with the user's input
+  const result = top_3_words(inputString)
+
+  // Display the result
+  console.log('Top 3 words:', result)
+
+  // Close the interface to end the program
+  rl.close()
+})
+
 // This function takes an input string and returns an array of the top three most frequently used words in it.
 function top_3_words(inputString) {
   // Convert the input string to lowercase to ensure case-insensitive word counting.
