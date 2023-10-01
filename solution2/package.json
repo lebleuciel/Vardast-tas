@@ -1,0 +1,15 @@
+{
+  "name": "vardast-tas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles main.test.js",
+    "start": "node main.js"
+    },
+  "author": "Hasti Darabi",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

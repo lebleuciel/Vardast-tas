@@ -1,7 +1,24 @@
 const Trie = require('./trie') // Import the Trie module
 
+const readline = require('readline')
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+})
+
+rl.question('Enter a string: ', (inputString) => {
+  // Call the top_3_words function with the user's input
+  const result = top_3_words(inputString)
+
+  // Display the result
+  console.log('Top 3 words:', result)
+
+  // Close the interface to end the program
+  rl.close()
+})
+
 // Function to find the top 3 most repeated words in the Trie
-function top_3_word(inputString) {
+function top_3_words(inputString) {
   // Convert the input string to lowercase to ensure case-insensitive word counting.
   const lowerCaseString = inputString.toLowerCase()
   // Replace all characters that are not letters or apostrophes with spaces to isolate words.
@@ -44,4 +61,4 @@ function top_3_word(inputString) {
   return topWordsPlainStrings.slice(0, 3)
 }
 
-module.exports = top_3_word
+module.exports = top_3_words
