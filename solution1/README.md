@@ -28,7 +28,7 @@ git clone https://github.com/lebleuciel/Vardast-task
 
 ```
 
-cd vardast-task
+cd vardast-task/solution1
 
 ```
 
