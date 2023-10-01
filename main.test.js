@@ -8,4 +8,24 @@ describe('top_3_words function', () => {
     const result = top_3_words(inputString)
     expect(result).toEqual(['a', 'of', 'on'])
   })
+  it('should handle an empty string input', () => {
+    const inputString = ''
+    const result = top_3_words(inputString)
+    expect(result).toEqual([])
+  })
+  it('should handle input with no words', () => {
+    const inputString = '!@#$%^&*()'
+    const result = top_3_words(inputString)
+    expect(result).toEqual([])
+  })
+  it('should handle input with different capitalization', () => {
+    const inputString = 'Apple apple BANANA Banana banana'
+    const result = top_3_words(inputString)
+    expect(result).toEqual(['banana', 'apple'])
+  })
+  it('should handle input with special characters', () => {
+    const inputString = 'word@word word#word word$word'
+    const result = top_3_words(inputString)
+    expect(result).toEqual(['word'])
+  })
 })
