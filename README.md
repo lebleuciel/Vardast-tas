@@ -21,14 +21,14 @@ This project provides a JavaScript function for finding the top three most frequ
 
 ```bash
 
-git clone https://github.com/lebleuciel/Vardast-tas
+git clone https://github.com/lebleuciel/Vardast-task
 
 ```
 2. Navigate to the project directory:
 
 ```
 
-cd vardast-tas
+cd vardast-task
 
 ```
 
